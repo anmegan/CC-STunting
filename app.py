@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestRegressor
 app = Flask(__name__)
 
 # Muat model yang sudah dilatih
-model = joblib.load('app/models/model.pkl')
+model = joblib.load('model.pkl')
 
 @app.route('/')
 def index():
