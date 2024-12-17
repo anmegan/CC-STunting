@@ -16,9 +16,9 @@
     <p>Gunakan alat prediksi kami untuk melakukan prediksi dengan model machine learning.</p>
     
     <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
-        <label for="xlsFile">Upload Excel File:</label>
+        <label for="csvFile">Upload CSV File:</label>
         <div class="upload-box">
-            <input type="file" id="xlsFile" name="xlsFile" accept=".xls" required />
+            <input type="file" id="csvFile" name="csvFile" accept=".csv" required />
         </div>
         <button type="submit" class="btn-submit">Predict</button>
     </form>
